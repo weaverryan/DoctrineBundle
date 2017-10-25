@@ -14,13 +14,12 @@
 
 namespace Doctrine\Bundle\DoctrineBundle\Tests;
 
-use PHPUnit\Framework\TestCase;
 use Symfony\Bridge\Doctrine\DependencyInjection\CompilerPass\DoctrineValidationPass;
 use Symfony\Bridge\Doctrine\DependencyInjection\CompilerPass\RegisterEventListenersAndSubscribersPass;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Doctrine\Bundle\DoctrineBundle\DoctrineBundle;
 
-class BundleTest extends TestCase
+class BundleTest extends \PHPUnit_Framework_TestCase
 {
     public function testBuildCompilerPasses()
     {

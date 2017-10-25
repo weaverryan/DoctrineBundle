@@ -17,13 +17,12 @@ namespace Doctrine\Bundle\DoctrineBundle\Tests;
 use Doctrine\Bundle\DoctrineBundle\Tests\DependencyInjection\TestType;
 use Doctrine\Common\Annotations\AnnotationReader;
 use Doctrine\Bundle\DoctrineBundle\DependencyInjection\DoctrineExtension;
-use PHPUnit\Framework\TestCase as BaseTestCase;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Definition;
 use Symfony\Component\DependencyInjection\ParameterBag\ParameterBag;
 use Symfony\Component\DependencyInjection\Compiler\ResolveDefinitionTemplatesPass;
 
-class TestCase extends BaseTestCase
+class TestCase extends \PHPUnit_Framework_TestCase
 {
     protected function setUp()
     {

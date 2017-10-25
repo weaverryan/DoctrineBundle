@@ -3,10 +3,9 @@
 namespace Doctrine\Bundle\DoctrineBundle\Tests\Mapping;
 
 use Doctrine\Bundle\DoctrineBundle\Mapping\ContainerAwareEntityListenerResolver;
-use PHPUnit\Framework\TestCase;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
-class ContainerAwareEntityListenerResolverTest extends TestCase
+class ContainerAwareEntityListenerResolverTest extends \PHPUnit_Framework_TestCase
 {
     /**
      * @var ContainerAwareEntityListenerResolver

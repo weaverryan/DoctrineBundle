@@ -17,7 +17,6 @@ namespace Doctrine\Bundle\DoctrineBundle\Tests\DependencyInjection;
 use Doctrine\Bundle\DoctrineBundle\DependencyInjection\Compiler\EntityListenerPass;
 use Doctrine\Bundle\DoctrineBundle\DependencyInjection\DoctrineExtension;
 use Doctrine\ORM\Version;
-use PHPUnit\Framework\TestCase;
 use Symfony\Bridge\Doctrine\DependencyInjection\CompilerPass\RegisterEventListenersAndSubscribersPass;
 use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -26,7 +25,7 @@ use Symfony\Component\DependencyInjection\ParameterBag\ParameterBag;
 use Symfony\Component\DependencyInjection\Reference;
 use Symfony\Component\DependencyInjection\Compiler\ResolveDefinitionTemplatesPass;
 
-abstract class AbstractDoctrineExtensionTest extends TestCase
+abstract class AbstractDoctrineExtensionTest extends \PHPUnit_Framework_TestCase
 {
     abstract protected function loadFromFile(ContainerBuilder $container, $file);
 
